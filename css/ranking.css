@@ -61,4 +61,5 @@ footer {width: 100%;padding: 12px;background: #0a0b0c;color: #fff;text-align: ce
         color: #fff;
         padding: 25px;
     }
+    #menu-items .menu-item:hover {transform: scale(1);}
 }

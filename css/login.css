@@ -75,4 +75,5 @@ footer {width: 100%;padding: 12px;background: #0a0b0c;color: #fff;text-align: ce
     .field {width: 99%;}
     h1 {left: 7%;}
     #twitch {right: 7%;}
+    #menu-items .menu-item:hover {transform: scale(1);}
 }
