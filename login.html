@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Pixel Store</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="imgs/icon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <article id="m-btn"><i class="fas fa-bars"></i></article>
+            <nav id="menu">
+                <ul id="menu-items">
+                    <a href="ranking.html" class="menu-item"><li>Ranking</li></a>
+                    <a href="index.html" class="login"><li>Voltar</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="login">
+        <img id="logo" src="imgs/pxlogo.png" alt="Pixel Store">
+        <form action="#" id="form-login">
+            <h1>Login</h1>
+            <a href="#" id="twitch"><i class="fab fa-twitch"></i> Entrar com a Twitch</a>
+            <input class="field" type="text" name="name" placeholder="Usuário">
+            <input class="field" type="password" name="pass" placeholder="Senha">
+            <small style="color: #fff;padding-right: 32%;padding-bottom: 5%;">Cadestre-se logando com a twitch.</small>
+            <input class="field btn" type="submit" value="Entrar">
+        </form>
+    </section>
+
+    <footer>Pixel Store &copy; 2021</footer>
+    <script>
+        let menu = $('#menu-items');
+        $(document).mouseup(function(e){
+       if (!menu.is(e.target)
+           && menu.has(e.target).length === 0)
+           {
+              menu.hide();
+           }
+        });
+
+        $('#m-btn').click(function(e) {
+            $('#menu-items').slideToggle();
+        });
+    </script>
+</body>
+</html>

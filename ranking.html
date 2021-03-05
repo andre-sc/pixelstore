@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Pixel Store</title>
+    <link rel="stylesheet" href="css/ranking.css">
+    <link rel="icon" href="imgs/icon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img id="logo" src="imgs/pxlogo.png" alt="Pixel Store">
+            <article id="m-btn"><i class="fas fa-bars"></i></article>
+            <nav id="menu">
+                <ul id="menu-items">
+                    <a href="ranking.html" class="menu-item"><li>Ranking</li></a>
+                    <a href="index.html" class="login"><li>Voltar</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="ranking">
+        <h1>Ranking</h1>
+        <table>
+            <tr>
+                <th class="pos">Posição</th>
+                <th>Nome</th>
+                <th class="pixel">Pixels</th>
+            </tr>
+            <tr>
+                <td>1º</td>
+                <td>paodeeforma</td>
+                <td>500kk </td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>paodeeforma</td>
+                <td>400kk </td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>paodeeforma</td>
+                <td>300kk </td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td>paodeeforma</td>
+                <td>200kk </td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>paodeeforma</td>
+                <td>100kk </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>Pixel Store &copy; 2021</footer>
+    <script>
+        let menu = $('#menu-items');
+        $(document).mouseup(function(e){
+       if (!menu.is(e.target)
+           && menu.has(e.target).length === 0)
+           {
+              menu.hide();
+           }
+        });
+
+        $('#m-btn').click(function(e) {
+            $('#menu-items').slideToggle();
+        });
+    </script>
+</body>
+</html>
