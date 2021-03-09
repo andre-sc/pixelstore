@@ -76,15 +76,14 @@ footer {padding: 12px;background: #0a0b0c;color: #fff;text-align: center;margin-
     header{height: 60px;}
     #logo {width: 100px;height: 25px;}
     .container, #items, #menu {width: 100%;}
-    #menu-items {display: none;}
-    .item-box {display: block;width: 90%;margin: 12px auto;}
-    #menu-items .login, #menu-items .menu-item {
+    #menu-items {display: none;background: #1d2125;margin-top: 25px;}
+    #menu-items .login, #menu-items .menu-item, #menu-items .entrar {
         display: block;
         width: 100%;
         border: none;
-        background: #1e2630;
         position: relative;
-        top: 25px;
+        background: #1d2125;
+        right: 0;
         color: #fff;
         padding: 25px;
     }

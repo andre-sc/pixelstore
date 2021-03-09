@@ -14,8 +14,8 @@ header{width:100%;height: 80px;position: fixed;z-index: 1;background: #0a0b0c;}
     position: relative;
     bottom: 25px;
 }
-#menu-items {width: 100%;}
-#menu-items .menu-item, .login {
+#menu-items{width: 100%;}
+#menu-items .menu-item, .login, .entrar {
     display: inline-block;
     padding: 8px 25px;
     color: #fff;
@@ -23,8 +23,9 @@ header{width:100%;height: 80px;position: fixed;z-index: 1;background: #0a0b0c;}
 }
 #m-btn {color: #ffa214;font-size: 26px;display: none;}
 #menu-items .menu-item:hover{transform: scale(1.2);transition: linear .1s;color: #ffa214;}
-.login {margin-left: auto;position: absolute;right: 0;border: 1px solid #ffa214;color: #ffa214;}
-.login:hover{background: #ffa214;color: #fff;transition: linear .2s;}
+.login, .entrar {margin-left: auto;position: absolute;right: 120px;border: 1px solid #ffa214;color: #ffa214;}
+.entrar {right: 0}
+.login:hover, .entrar:hover{background: #ffa214;color: #fff;transition: linear .2s;}
 #ranking{width: 1200px;height:100vh;margin: 0 auto;padding-top: 150px; }
 table {width: 100%;text-align: left;border-collapse: collapse;color: #aaa;}
 .pos {width: 100px;}
@@ -43,23 +44,21 @@ h1 {color: #fff;margin-bottom: 15px;}
 footer {width: 100%;padding: 12px;background: #0a0b0c;color: #fff;text-align: center;}
 @media only screen and (max-width: 900px) {
     #m-btn {display: inline-block;position: absolute;right: 35px;top: 15px;}
-    /*body {overflow-y: hidden;}*/
     header{height: 60px;}
     table{width: 100%;}
     #logo {width: 100px;height: 25px;}
     .container, #ranking, #menu {width: 100%;}
     #ranking {padding-top: 80px;}
-    #menu-items {display: none;}
-    .item-box {display: block;width: 90%;margin: 12px auto;}
-    #menu-items .login, #menu-items .menu-item {
+    #menu-items {display: none;background: #1d2125;margin-top: 25px;}
+    #menu-items .login, #menu-items .menu-item, #menu-items .entrar {
         display: block;
         width: 100%;
         border: none;
-        background: #1e2630;
         position: relative;
-        top: 25px;
+        background: #1d2125;
+        right: 0;
         color: #fff;
         padding: 25px;
     }
-    #menu-items .menu-item:hover {transform: scale(1);}
+    #menu-items .menu-item:hover, #menu-items .login:hover, #menu-items .entrar:hover {transform: scale(1);background: #0a0b0c;color: #ffa214;}
 }
